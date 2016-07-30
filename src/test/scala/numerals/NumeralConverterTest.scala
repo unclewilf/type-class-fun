@@ -14,12 +14,12 @@ class NumeralConverterTest extends FunSuite with Matchers with TableDrivenProper
             ( 5,       "V"),
             ( 8,       "VIII"),
             ( 9,       "IX"),
-            ( 10,      "X")
+            ( 10,      "X"),
+            ( 1066,    "MLXVI")
         )
 
-//        9	    IX
-//        1066	MLXVI
 //        1989	MCMLXXXIX
+
 
     forAll (numeralConversions) { (arabic: Int, numeral: String) =>
         convert(arabic) shouldBe numeral

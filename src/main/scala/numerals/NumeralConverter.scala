@@ -1,8 +1,14 @@
 package numerals
 
+import scala.collection.{mutable, SortedMap}
+
 object NumeralConverter {
 
-    val numberToNumeral = Map(
+    val numberToNumeral = mutable.LinkedHashMap(
+        1000 -> "M",
+        500 -> "D",
+        100 -> "C",
+        50 -> "L",
         10 -> "X",
         5 -> "V",
         1 -> "I"
@@ -19,7 +25,7 @@ object NumeralConverter {
 
         numberToNumeral.collectFirst {
             case (number, numeral) if i == number => numeral
-            case (number, numeral) if i >= number => numeral + getExact(i - number)
+            case (number, numeral) if i > number => numeral + getExact(i - number)
         }.getOrElse(throw new IllegalArgumentException)
     }
 
