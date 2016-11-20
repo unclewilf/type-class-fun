@@ -1,5 +1,0 @@
-package typeclassfun
-
-class Blah {
-
-}

@@ -1,3 +1,5 @@
-Playing around with Cats library for Scala
+Playing around with type classes
 
-https://github.com/typelevel/cats
+Useful when performing similar action on types without a common interface
+
+Less verbose than gof adapter pattern
