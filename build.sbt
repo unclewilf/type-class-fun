@@ -1,10 +1,9 @@
-name := "cats-fun"
+name := "type-class-fun"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.0"
 
 libraryDependencies ++= Seq(
-    "org.scalatest" % "scalatest_2.11" % "3.0.0",
-    "org.typelevel" %% "cats" % "0.8.0"
+    "org.scalatest" % "scalatest_2.12" % "3.0.1"
 )

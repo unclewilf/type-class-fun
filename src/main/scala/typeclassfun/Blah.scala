@@ -1,0 +1,5 @@
+package typeclassfun
+
+class Blah {
+
+}
